@@ -1,0 +1,38 @@
+.menu {}
+.board {
+	width: 504px;
+	height:504px;
+	background-image: url("http://orig05.deviantart.net/f29c/f/2012/047/3/a/mmd___blossom_miku_icon_by_yellow_blossom-d4pzkm4.png");
+}
+.level-2 {
+	width: 50%;
+	height:50%;
+}
+.level-8 {
+	width: 25%;
+	height: 25%;
+}
+.level-16 {
+	width:12.5%;
+	height: 12.5%;
+}
+.tile {
+	display: inline-block;
+	overflow: hidden;
+}
+.tile>div, .tile>div>img, .tile>div>div {
+	width: 100%;
+	height: 100%
+}
+.tile>div>h1 {
+	margin: 0px;
+}
+.hidden {display: none !important;}
+.counter {
+	display: inline-block;
+}
+.opaque {
+	width: 100%;
+	height:100%;	
+	background-color: lightgray;
+}

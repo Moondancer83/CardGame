@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<title>Memory Project</title>
+	<link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<input type="button" value="Start" onclick="app.resetGame()" />
+			Difficulty: 
+			<input type="button" value="Easy" onclick="app.setLevel(2)" />
+			<input type="button" value="Medium" onclick="app.setLevel(8)" />
+			<input type="button" value="Hard" onclick="app.setLevel(32)" disabled/>
+		</div>
+		<div class="board">
+			<div class="tile hidden">
+				<div id="t1" data-id="p1" onclick="app.checkTiles(this)">
+					<img src="http://images.all-free-download.com/images/graphicthumb/facebook_93482.jpg" class="front hidden" />
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/HTML5_Shiny_Icon.svg/200px-HTML5_Shiny_Icon.svg.png" class="back" />
+				</div>
+			</div>
+			<div class="tile hidden">
+				<div id="t2" data-id="p2" onclick="app.checkTiles(this)">
+					<img src="http://seeklogo.com/images/T/twitter-icon-logo-1041A58E6A-seeklogo.com.gif" class="front hidden" />
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/HTML5_Shiny_Icon.svg/200px-HTML5_Shiny_Icon.svg.png" class="back" />
+				</div>
+			</div>
+			<div class="tile hidden">
+				<div id="3" data-id="p2" onclick="app.checkTiles(this)">
+					<img src="http://seeklogo.com/images/T/twitter-icon-logo-1041A58E6A-seeklogo.com.gif" class="front hidden" />
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/HTML5_Shiny_Icon.svg/200px-HTML5_Shiny_Icon.svg.png" class="back" />
+				</div>
+			</div>
+			<div class="tile hidden">
+				<div id="t4" data-id="p1" onclick="app.checkTiles(this)">
+					<img src="http://images.all-free-download.com/images/graphicthumb/facebook_93482.jpg" class="front hidden" />
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/HTML5_Shiny_Icon.svg/200px-HTML5_Shiny_Icon.svg.png" class="back" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="native/app.js"></script>
+	<script src="native/app-test.js"></script>
+</body>
+</html>
